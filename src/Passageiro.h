@@ -11,7 +11,7 @@ class Passageiro
         Cidade* localAtual;
         bool emViagem;
     public:
-        Passageiro(const std::string nome, Cidade* localAtual);
+        Passageiro(const std::string& nome, Cidade* localAtual);
     
         std::string getNome() const;
         Cidade* getLocalAtual() const;
