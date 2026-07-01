@@ -19,15 +19,9 @@ bool Persistencia::salvarDados(ControladorDeTransito& controlador) {
         return false;
     }
     
-    // TODO: Implementar salvamento dos dados
-    
-    std::cout << "Dados salvos com sucesso!" << std::endl;
-    return true;
+    return controlador.salvarDados();
 }
 
 bool Persistencia::carregarDados(ControladorDeTransito& controlador) {
-    // TODO: Implementar carregamento dos dados
-    
-    std::cout << "Dados carregados com sucesso!" << std::endl;
-    return true;
+    return controlador.carregarDados();
 }
