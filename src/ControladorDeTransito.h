@@ -23,6 +23,18 @@ class ControladorDeTransito {
         Passageiro* encontrarPassageiro(const std::string& nome);
         Trajeto* encontrarTrajeto(Cidade* origem, Cidade* destino, char tipoTransporte);
         std::vector<Trajeto*> encontrarMelhorCaminho(Cidade* origem, Cidade* destino, char tipoTransporte);
+
+        bool salvarCidades();
+        bool salvarTrajetos();
+        bool salvarTransportes();
+        bool salvarPassageiros();
+        bool salvarViagens();
+        
+        bool carregarCidades();
+        bool carregarTrajetos();
+        bool carregarTransportes();
+        bool carregarPassageiros();
+        bool carregarViagens();
     public:
         ControladorDeTransito();
         ~ControladorDeTransito();
