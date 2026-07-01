@@ -1,0 +1,45 @@
+## VsCode
+.vscode/
+
+## Arquivos compilados
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+
+## Bibliotecas
+*.a
+*.lib
+
+## Builds
+build/
+bin/
+dist/
+out/
+Debug/
+Release/
+
+## CMake e make
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+*.make
+
+## Logs
+
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+## Sistema de Arquivos
+.DS_Store
+Thumbs.db
