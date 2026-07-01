@@ -166,17 +166,24 @@ int main() {
                 
             case 12:
                 // Salvar Dados
-                controlador.salvarDados();
+                if (!Persistencia::salvarDados(controlador)) {
+                    std::cout << "Erro ao salvar dados!" << std::endl;
+                }
                 break;
                 
             case 13:
                 // Carregar Dados
-                controlador.carregarDados();
+                
+                if (!Persistencia::carregarDados(controlador)) {
+                    std::cout << "Erro ao carregar dados!" << std::endl;
+                }
+                
                 break;
                 
             case 0:
                 cout << "Saindo do sistema..." << endl;
-                controlador.salvarDados();
+                //controlador.salvarDados();
+
                 break;
                 
             default:
