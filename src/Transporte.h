@@ -11,13 +11,13 @@ class Transporte {
         int capacidade;
         int velocidade;
         int distancia_entre_descansos;
-        int tempo_de_desconso;
+        int tempo_de_descanso;
         int tempo_de_descanso_atual;
         Cidade* localAtual;
         bool emMovimento;
 
     public:
-        Transporte(const std::string nome, char tipo, int capacidade, 
+        Transporte(const std::string& nome, char tipo, int capacidade, 
             int velocidade, int distancia_entre_descansos, int tempo_de_desconso,
             Cidade* localAtual);
         
